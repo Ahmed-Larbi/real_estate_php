@@ -18,9 +18,9 @@ class PostController extends Controller
             'size' => 'required|string|max:50',
             'name' => 'required|string|max:50',
             'address' => 'required|string|max:100',
-            'image_url' => 'required|url|max:200',
+            'pictures' => 'required|string|max:10000',
             'phone_number' => 'required|string|max:20',
-            'sell_or_rent' => 'required|string|in:sell,rent',
+            'sell_or_rent' => 'required|string|max:200',
             'account_id' => 'required|exists:accounts,id'
         ]);
 
